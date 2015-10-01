@@ -349,7 +349,7 @@ template do
 
   output 'MySqlEndpoint',
          :Description => 'Relational database endpoint for the signup data store',
-         :Value => get_att('MySqlRdbms', 'PublicDnsName')
+         :Value => get_att('MySqlRdbms', 'PrivateIp')
 
   output 'SignUpSnsTopic',
          :Description => 'SNS Topic ARN',
