@@ -108,7 +108,7 @@ template do
                   :Statement => [
                       {
                           :Effect => 'Allow',
-                          :Action => [ 'sns:Publish' ],
+                          :Action => [ 'sns:Publish', 'dynamodb:*' ],
                           :Resource => [ '*' ],
                       },
                   ],
